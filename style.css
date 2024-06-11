@@ -1,8 +1,223 @@
-* {
-    padding: 0px;
-    margin: 0px;
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root { /* GLOBAL STYLE VARIABLES */
+    /* Main color variables */
+    --black: hsl(0, 0%, 8%);
+    --dark-gray: hsl(0, 0%, 14%);
+    --arch-red: hsl(0, 92%, 58%);
+    --arch-red-off: hsl(0, 92%, 38%);
+    --gray: hsl(0, 0%, 85%);
+    --white: hsl(0, 0%, 100%);
+    /* Font Sizes converted to REM */
+    --fs-18: 1.125rem;
+    --fs-88: 5.5rem;
+    --fs-72: 4.5rem;
+    --fs-48: 3rem;
+    --fs-40: 2.5rem;
+    --fs-32: 2rem;
+    --fs-24: 1.5rem;
+    /* Media Spacing */
+    --container: 69.375rem;
+    /* Transition */
+    --transition: color 150ms ease-in-out;
+}
+
+.source-code-pro {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.montserrat{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+html {
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.1rem;
-    color: #EDE8F5;
+    font-size: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
+a:visited {
+    color: white;
+}
+
+body {
+    margin: 0;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: var(--fs-18);
+    line-height: 1.56;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+    font-family: "Source Code Pro", monospace;
+}
+
+h1 {
+    font-size: 2rem;
+    font-size: clamp(1.5rem, 0.6rem + 7vw, 5rem);
+    font-weight: 500;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--arch-red);
+}
+
+svg:hover path {
+    fill: var(--arch-red);
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: var(--arch-red);
+    text-decoration-thickness: 4px;
+    text-underline-offset: 15px;
+}
+
+.header-social > svg > path {
+    transition: fill 150ms ease-in-out;
+}
+
+.wrapper {
+    width: calc(100% - 2rem);
+    max-width: var(--container);
+    margin-inline: auto;
+}
+
+.red-pop {
+    color: var(--arch-red);
+}
+
+/* Header Styling */
+.header {
+    margin-top: 20px;
+}
+
+.header-nav {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 40px;
+}
+
+.header-home {
+    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 1.02rem + 2.03vw, 2rem);
+    font-family: "Source Code Pro", monospace;
+    color: var(--white);
+    flex: 1 0 100%;
+}
+
+/* Hero Styling */
+
+.hero {
+}
+
+.hero-wrapper {
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50%;
+    display: block;
+    z-index: -1;
+}
+
+.hero-rings {
+    position: absolute;
+    top: 120px;
+    right: 50%;
+    z-index: -2;
+}
+
+.hero-text{
+    text-align: center;
+    margin-top: 320px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.hero-headline {
+}
+
+.hero-desc {
+}
+
+.hero-contact {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    letter-spacing: .5rem;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--arch-red);
+    color: var(--white);
+    transition: background-color 150ms ease-in-out;
+}
+
+.hero-contact:hover {
+    background-color: var(--arch-red-off);
+    cursor: pointer;
+}
+
+/* Skills Styling */
+
+.skills{
+
+}
+
+.skills-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding-block: 40px;
+    padding: 40px;
+}
+
+.skills-item {
+    text-align: center;
+}
+
+.skills-title {
+    font-size: 2rem;
+    font-weight: 500;
+    font-size: clamp(2rem, 0.33rem + 7.11vw, 3rem);
+    line-height: 1.17;
+    margin-bottom: 2px;
 }
