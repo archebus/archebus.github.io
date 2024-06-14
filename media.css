@@ -112,6 +112,11 @@
         translate: 60% 50%;
     }
 
+    
+    .projects-wrapper {
+        margin-top: 50px;
+    }
+
     .projects-grid {
         gap: 70px 30px;
     }

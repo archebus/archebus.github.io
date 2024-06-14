@@ -13,8 +13,8 @@
     <header class="header">
         <div class="wrapper">
             <nav class="header-nav">
-                <a href="" class="header-home">joshDevon<span class="red-pop">.</span></a>
-                <a href="" class="header-social"><svg 
+                <a href="./" class="header-home">joshDevon<span class="red-pop">.</span></a>
+                <a href="https://github.com/archebus" class="header-social"><svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="25" 
                     height="24"
@@ -26,7 +26,7 @@
                     fill-rule="evenodd" 
                     d="M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z"/></svg>
                 </a>
-                <a href="" class="header-social"><svg 
+                <a href="https://www.linkedin.com/in/joshua-devon-8304aa86/" class="header-social"><svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="25" 
                     height="24"
@@ -62,8 +62,9 @@
                     <h1 class="hero-headline">Hey there! I'm <span class="underline">Josh Devon</span></h1>
                     <p class="hero-desc">Based in Australia, I am full time student on the path towards Full Stack Development.</p>
                     <a href="#contact" class="hero-contact">Contact Me</a>
-
                 </div>
+            </div>
+            <div class="wrapper">
                 <hr />
             </div>
         </section>
@@ -104,6 +105,8 @@
                 height="129"
                 />
                 </div>
+            </div>
+            <div class="wrapper">
                 <hr />
             </div>
         </section>
@@ -120,23 +123,24 @@
                         <picture class="projects-picture">
                             <source
                             media="(min-width: 62.5em)"
-                            srcset="https://via.placeholder.com/1080x800"
+                            srcset="./images/projects/calc_large.jpg"
                             />
                             <img 
-                            src="https://via.placeholder.com/686x506" 
+                            src="./images/projects/calc_med.jpg" 
                             class="projects-image"
                             width="343"
                             height="253"
                             />
                         </picture>
-                        <h3 class="projects-title">Project #1</h3>
+                        <h3 class="projects-title">Calculator</h3>
                         <p class="projects-tags">
                             <span>HTML</span>
                             <span>CSS</span>
+                            <span>JavaScript</span>
                         </p>
                         <div class="projects-links">
-                            <a href="" class="underline">Preview</a>
-                            <a href="" class="underline">Code</a>
+                            <a href="https://archebus.github.io/Calculator/" class="underline">Preview</a>
+                            <a href="https://github.com/archebus/Calculator" class="underline">Code</a>
                         </div>
                     </div>
 
@@ -144,29 +148,28 @@
                         <picture class="projects-picture">
                             <source
                             media="(min-width: 62.5em)"
-                            srcset="https://via.placeholder.com/1080x800"
+                            srcset="./images/projects/etch_large.jpg"
                             />
                             <img 
-                            src="https://via.placeholder.com/686x506" 
+                            src="./images/projects/etch_med.jpg" 
                             class="projects-image"
                             width="343"
                             height="253"
                             />
                         </picture>
-                        <h3 class="projects-title">Project #1</h3>
+                        <h3 class="projects-title">ETCH-A-SKETCH</h3>
                         <p class="projects-tags">
                             <span>HTML</span>
                             <span>CSS</span>
+                            <span>JavaScript</span>
                         </p>
                         <div class="projects-links">
-                            <a href="" class="underline">Preview</a>
-                            <a href="" class="underline">Code</a>
+                            <a href="https://archebus.github.io/Odin_Etch-a-Sketch/" class="underline">Preview</a>
+                            <a href="https://github.com/archebus/Odin_Etch-a-Sketch" class="underline">Code</a>
                         </div>
                     </div>
 
-
                 </div>
-                <hr />
             </div>
         </section>
 
@@ -179,7 +182,8 @@
                         Please fill in the form, and I'll get back to you as soon as possible.
                     </p>
                 </div>
-                <form action="" class="contact-form">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <input type="hidden" name="access_key" value="08aabc6a-18f5-451b-b535-d64e38ce41dc">
                     <div class="contact-control">
                         <input type="text" id="name" name="name" placeholder="Name" required/>
                     </div>
@@ -196,8 +200,9 @@
                         required
                         ></textarea>
                     </div>
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                     <div class="contact-control">
-                        <button class="contact-button" type="button">Send Message</button>
+                        <button class="contact-button" type="submit">Send Message</button>
                     </div>
                 </form>
             </div>
@@ -220,7 +225,7 @@
         <div class="wrapper">
             <nav class="footer-nav">
                 <a href="" class="footer-home">joshDevon<span class="red-pop">.</span></a>
-                <a href="" class="footer-social"><svg 
+                <a href="https://github.com/archebus" class="footer-social"><svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="25" 
                     height="24"
@@ -232,7 +237,7 @@
                     fill-rule="evenodd" 
                     d="M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z"/></svg>
                 </a>
-                <a href="" class="footer-social"><svg 
+                <a href="https://www.linkedin.com/in/joshua-devon-8304aa86/" class="footer-social"><svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="25" 
                     height="24"

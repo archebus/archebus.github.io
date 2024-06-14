@@ -170,10 +170,8 @@ svg:hover path {
 
 /* Hero Styling */
 
-.hero {
-}
-
 .hero-wrapper {
+    margin-bottom: 140px;
 }
 
 .hero-image {
@@ -264,9 +262,6 @@ svg:hover path {
 
 /* Project Styling */
 
-.project {
-}
-
 .projects-wrapper {
     padding-block: 80px;
 }
@@ -349,10 +344,6 @@ svg:hover path {
 
 .contact-form {
     margin-inline: auto;
-}
-
-.contact-control {
-
 }
 
 .contact-control input,
